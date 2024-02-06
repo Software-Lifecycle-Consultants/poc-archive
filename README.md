@@ -2,11 +2,11 @@
 
 - Go into your project's parent folder and exescute following commands
 
-1. Initializes a new Git repository in the current directory.
+1. Initialize a new Git repository in the current directory.
  ```bash
 git init
  ```
-2. Updates your local copy of the remote branches wih the latest changes from the remote repository 
+2. Update your local copy of the remote branches wih the latest changes from the remote repository 
  ```bash
 git fetch
  ```
