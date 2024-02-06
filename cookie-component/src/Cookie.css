@@ -1,0 +1,75 @@
+.display-container{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(21, 17, 34);
+}
+
+
+.cookie-container{
+
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    border: none;
+    margin-top: 20em;
+    margin-bottom: 0px;
+    height: 4em;
+    width: 100%;
+    background-color: white;
+    opacity: 80%;
+    box-shadow: 0 0 5px white;
+
+}
+
+.description{
+
+    text-align: center;
+    padding: 3px;
+    border: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: 10px 10px 10px;
+
+
+}
+
+.accept-button{
+    
+    border: none;
+    font-size: medium;
+    margin-left: 20px;
+    margin-right: 5px;
+    background-color: rgb(66, 66, 209);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.4em;
+
+}
+
+.accept-button:hover{
+
+    border: none;
+    background-color: whitesmoke;
+    color: rgb(35, 118, 219);
+
+}
+
+.reject-button {
+
+    border: none;
+    font-size: medium;
+    background-color: rgb(207, 92, 92);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.4em;
+
+}
+
+.reject-button:hover {
+
+    border: none;
+    background-color: whitesmoke;
+    color: rgb(209, 66, 66);
+
+}
