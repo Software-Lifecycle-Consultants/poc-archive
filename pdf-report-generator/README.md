@@ -1,11 +1,11 @@
-# node install 
+# Node install 
 npm i
 
-# start the project
+# Start the project
 npm run dev
 
 
-## Packages Installed
+# Packages Installed
 
 ## react-pdf [https://react-pdf.org/]
 
