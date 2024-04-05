@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Page, Text, Document, View, StyleSheet } from "@react-pdf/renderer";
+import { Page, Text, Document, View } from "@react-pdf/renderer";
 import { createTw } from "react-pdf-tailwind";
 
 const tw = createTw({
@@ -16,10 +16,9 @@ const tw = createTw({
   },
 });
 
-const styles = StyleSheet.create({});
+
 
 const BookingPDF = () => {
-  const Bookingid = 100;
   return (
     <Document>
       <Page size="A4" wrap>
