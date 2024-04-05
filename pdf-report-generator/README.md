@@ -1,4 +1,4 @@
-# Node install 
+# Node installation
 npm i
 
 # Start the project
