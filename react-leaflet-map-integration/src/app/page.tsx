@@ -1,8 +1,11 @@
 //"use client";
 import { NextPage } from "next";
-import Map from "../app/Components/Map";
+import dynamic from "next/dynamic";
 
 const Home: NextPage = () => {
+  const Map = dynamic(() => import("@/app/Components/Map"), {
+    ssr: false,
+  });
   const positionInfos = [
     { address: "Colombo International Airport Ratmalana" }, //Add your location here
   ];

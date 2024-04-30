@@ -20,48 +20,33 @@ const Map: React.FC<MapProps> = (props) => {
     isLoaded: false,
   });
 
-  useEffect(() => {
-    const getLocation = () => {
-      if (typeof window !== "undefined" && navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            setLatLng({
-              lat: position.coords.latitude,
-              lng: position.coords.longitude,
-              isLoaded: true,
-            });
-          },
-          (error) => {
-            alert(error);
-          }
-        );
-      }
-    };
-
-    getLocation();
-  }, [setLatLng]);
-
   return (
-    <MapContainer
-      center={[latLng.lat, latLng.lng]} //Map container
-      zoom={13}
-      scrollWheelZoom={false}
+    <div
+      className="map-container"
       style={{
         height: "500px",
         width: "500px",
-        alignItems: "center",
         marginLeft: "auto",
         marginRight: "auto",
-        marginTop: "20px",
       }}
     >
-      <TileLayer
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
+      <MapContainer
+        center={[latLng.lat, latLng.lng]} //Map container
+        zoom={13}
+        scrollWheelZoom={false}
+        style={{
+          height: "100%",
+          width: "100%",
+        }}
+      >
+        <TileLayer
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
 
-      <LeafletControlGeocoder positionInfos={positionInfos} />
-    </MapContainer>
+        <LeafletControlGeocoder positionInfos={positionInfos} />
+      </MapContainer>
+    </div>
   );
 };
 
