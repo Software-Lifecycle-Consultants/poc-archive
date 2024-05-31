@@ -1,6 +1,6 @@
 ## Getting Started
 
-Sending emails using Node-nalier
+Sending emails using Nodemalier
 
 required packages
 
